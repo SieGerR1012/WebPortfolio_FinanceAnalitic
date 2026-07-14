@@ -102,9 +102,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 5rem;
-    color: var(--accent);
     position: relative;
+    overflow: hidden;
+}
+
+.home__avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .home__avatar-ring {
@@ -113,4 +119,53 @@
     border-radius: 50%;
     border: 1px solid rgba(226, 183, 20, 0.15);
     animation: pulse-ring 3s ease-in-out infinite;
+}
+
+
+.home__stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 48px;
+}
+
+.home__stat {
+    text-align: center;
+}
+
+.home__stat-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+.home__stat-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+    .home__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home__desc {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home__buttons {
+        justify-content: center;
+    }
+
+    .home__stats {
+        justify-content: center;
+    }
+
+    .home__avatar {
+        width: 220px;
+        height: 220px;
+        font-size: 3.5rem;
+    }
 }
