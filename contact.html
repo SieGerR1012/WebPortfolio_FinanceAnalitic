@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>PortfolioFinAnalitic</title>
 
@@ -21,6 +22,7 @@
                 <a href="about.html" class="navbar__link">Обо мне</a>
                 <a href="education.html" class="navbar__link">Образование</a>
                 <a href="services.html" class="navbar__link">Услуги</a>
+                <a href="portfolio.html" class="navbar__link">Проекты</a>
                 <a href="contact.html" class="navbar__link active">Контакты</a>
             </div>
             <button class="navbar__burger" id="burger" aria-label="Меню">
@@ -30,6 +32,87 @@
             </button>
         </div>
     </nav>
+
+    <!-- Contact section desig -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Мои <span>Контакты</span></h2>
+            <p class="section-subtitle reveal">Свяжитесь со мной для обсуждения вашего проекта</p>
+
+            <div class="contact__grid">
+                <div class="contact__info reveal">
+                    <h3 class="contact__info-title">Контактная информация</h3>
+                    <p class="contact__info-desc">
+                        Открыт для сотрудничества и новых проектов. 
+                        Свяжитесь со мной любым удобным способом.
+                    </p>
+
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <div class="contact__detail-icon"><i class='bx bx-envelope'></i></div>
+                            <div>
+                                <div class="contact__detail-label">Email</div>
+                                <div class="contact__detail-value">alexey@morozov.com</div>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <div class="contact__detail-icon"><i class='bx bx-phone'></i></div>
+                            <div>
+                                <div class="contact__detail-label">Телефон</div>
+                                <div class="contact__detail-value">+7 (495) 123-45-67</div>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <div class="contact__detail-icon"><i class='bx bx-map-pin'></i></div>
+                            <div>
+                                <div class="contact__detail-label">Локация</div>
+                                <div class="contact__detail-value">Москва, Россия</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__socials">
+                        <a href="#" class="contact__social-link" aria-label="Instagram">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="#" class="contact__social-link" aria-label="Telegram">
+                            <i class='bx bxl-telegram'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact__form-wrapper reveal">
+                    <h3 class="contact__form-title">Напишите мне</h3>
+                    <form id="contactForm">
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label" for="name">Имя</label>
+                                <input class="form__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="email">Email</label>
+                                <input class="form__input" type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="subject">Тема</label>
+                            <input class="form__input" type="text" id="subject" name="subject" placeholder="Тема сообщения" required>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="message">Сообщение</label>
+                            <textarea class="form__textarea" id="message" name="message" placeholder="Опишите ваш проект или вопрос..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form__submit">Отправить сообщение</button>
+                    </form>
+                    <div class="form__success" id="formSuccess">
+                        <div class="form__success-icon"><i class='bx bx-check-circle'></i></div>
+                        <div class="form__success-text">Сообщение отправлено!</div>
+                        <div class="form__success-sub">Я свяжусь с вами в ближайшее время.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Footer section desig -->
@@ -47,12 +130,13 @@
                         <a href="about.html">Обо мне</a>
                         <a href="education.html">Образование</a>
                         <a href="services.html">Услуги</a>
+                        <a href="portfolio.html">Проекты</a>
                         <a href="contact.html">Контакты</a>
                     </div>
                     <div class="footer__col">
                         <div class="footer__col-title">Контакты</div>
-                        <a href="mailto:alexey@morozov.com">alex@pavlov.com</a>
-                        <a href="tel:+74951234567">+7 (495) 111-00-11</a>
+                        <a href="mailto:alex@pavlov.com">alex@pavlov.com</a>
+                        <a href="tel:+74951110011">+7 (495) 111-00-11</a>
                         <a href="#">Москва, Россия</a>
                     </div>
                 </div>
@@ -63,5 +147,6 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

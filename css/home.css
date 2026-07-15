@@ -169,3 +169,23 @@
         font-size: 3.5rem;
     }
 }
+
+@media (max-width: 480px) {
+    .home__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home__buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home__stats {
+        gap: 24px;
+    }
+
+    .home__stat-number {
+        font-size: 1.6rem;
+    }
+}

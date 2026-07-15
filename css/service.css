@@ -101,3 +101,13 @@
 .service-card:hover .service-card__link {
     gap: 10px;
 }
+
+@media (max-width: 480px) {
+    .services__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 28px 20px;
+    }
+}

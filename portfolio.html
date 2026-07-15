@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>PortfolioFinAnalitic</title>
+
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar__logo">A<span>.</span>Pavlov</a>
+            <div class="navbar__links" id="navLinks">
+                <a href="index.html" class="navbar__link">Главная</a>
+                <a href="about.html" class="navbar__link">Обо мне</a>
+                <a href="education.html" class="navbar__link">Образование</a>
+                <a href="services.html" class="navbar__link">Услуги</a>
+                <a href="portfolio.html" class="navbar__link active">Проекты</a>
+                <a href="contact.html" class="navbar__link">Контакты</a>
+            </div>
+            <button class="navbar__burger" id="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Portfolio section -->
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="section-title reveal">Мои <span>Проекты</span></h2>
+            <p class="section-subtitle reveal">Примеры выполненных проектов в области финансовой аналитики</p>
+
+            <div class="portfolio__filters reveal">
+                <button class="portfolio__filter active" data-filter="all">Все</button>
+                <button class="portfolio__filter" data-filter="modeling">Финансовые модели</button>
+                <button class="portfolio__filter" data-filter="dashboard">Дашборды</button>
+                <button class="portfolio__filter" data-filter="report">Отчёты</button>
+            </div>
+
+            <div class="slider reveal" id="portfolioSlider">
+                <div class="slider__track" id="sliderTrack">
+
+                    <div class="slider__slide" data-category="modeling">
+                        <div class="slider__image">
+                            <img src="img/portfolio1.jpg" alt="DCF-модель оценки компании">
+                        </div>
+                        <div class="slider__info">
+                            <span class="slider__tag">Финансовые модели</span>
+                            <h3 class="slider__title">DCF-модель оценки компании</h3>
+                            <p class="slider__desc">Полная DCF-модель для оценки справедливой стоимости промышленной компании с 5-летним горизонтом прогнозирования, включая построение трёхэтапной модели (3-statement) и расчёт WACC.</p>
+                            <div class="slider__meta">
+                                <span><i class='bx bx-calendar'></i> 2025</span>
+                                <span><i class='bx bx-time'></i> 3 недели</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__slide" data-category="dashboard">
+                        <div class="slider__image">
+                            <img src="img/portfolio2.jpg" alt="Дашборд управленческой отчётности">
+                        </div>
+                        <div class="slider__info">
+                            <span class="slider__tag">Дашборды</span>
+                            <h3 class="slider__title">Дашборд управленческой отчётности</h3>
+                            <p class="slider__desc">Интерактивный дашборд в Power BI для мониторинга ключевых финансовых показателей: выручка, маржинальность, расходы, cash flow. Автоматическая загрузка данных из ERP.</p>
+                            <div class="slider__meta">
+                                <span><i class='bx bx-calendar'></i> 2025</span>
+                                <span><i class='bx bx-time'></i> 2 недели</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__slide" data-category="report">
+                        <div class="slider__image">
+                            <img src="img/portfolio3.jpg" alt="Годовой отчёт по МСФО">
+                        </div>
+                        <div class="slider__info">
+                            <span class="slider__tag">Отчёты</span>
+                            <h3 class="slider__title">Годовой отчёт по МСФО</h3>
+                            <p class="slider__desc">Подготовка консолидированной годовой финансовой отчётности по стандартам IFRS для группы компаний, включая пояснения и reconciliation по всем разделам.</p>
+                            <div class="slider__meta">
+                                <span><i class='bx bx-calendar'></i> 2024</span>
+                                <span><i class='bx bx-time'></i> 6 недель</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__slide" data-category="modeling">
+                        <div class="slider__image">
+                            <img src="img/portfolio4.jpg" alt="Модель бюджетирования">
+                        </div>
+                        <div class="slider__info">
+                            <span class="slider__tag">Финансовые модели</span>
+                            <h3 class="slider__title">Модель бюджетирования</h3>
+                            <p class="slider__desc">Система бюджетирования для холдинговой структуры: rolling прогнозы, контроль исполнения, анализ отклонений (variance analysis). Интеграция с 1С:Предприятие.</p>
+                            <div class="slider__meta">
+                                <span><i class='bx bx-calendar'></i> 2024</span>
+                                <span><i class='bx bx-time'></i> 4 недели</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__slide" data-category="dashboard">
+                        <div class="slider__image">
+                            <img src="img/portfolio5.jpg" alt="Аналитический дашборд рисков">
+                        </div>
+                        <div class="slider__info">
+                            <span class="slider__tag">Дашборды</span>
+                            <h3 class="slider__title">Аналитический дашборд рисков</h3>
+                            <p class="slider__desc">Визуализация риск-метрик портфеля: VaR, коэффициенты Шарпа, корреляционная матрица. Динамическое обновление данных и автоматические алерты при превышении лимитов.</p>
+                            <div class="slider__meta">
+                                <span><i class='bx bx-calendar'></i> 2025</span>
+                                <span><i class='bx bx-time'></i> 2 недели</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="slider__arrow slider__arrow--prev" id="sliderPrev" aria-label="Предыдущий слайд">
+                    <i class='bx bx-chevron-left'></i>
+                </button>
+                <button class="slider__arrow slider__arrow--next" id="sliderNext" aria-label="Следующий слайд">
+                    <i class='bx bx-chevron-right'></i>
+                </button>
+
+            </div>
+
+            <div class="slider__dots" id="sliderDots"></div>
+        </div>
+    </section>
+
+    <!-- Footer section desig -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__brand-name">A<span>.</span>Pavlov</div>
+                    <p class="footer__brand-desc">Финансовый аналитик с более 8 летним опытом в области корпоративных финансов, инвестиционного анализа и риск-менеджмента.</p>
+                </div>
+                <div class="footer__nav">
+                    <div class="footer__col">
+                        <div class="footer__col-title">Навигация</div>
+                        <a href="index.html">Главная</a>
+                        <a href="about.html">Обо мне</a>
+                        <a href="education.html">Образование</a>
+                        <a href="services.html">Услуги</a>
+                        <a href="portfolio.html">Проекты</a>
+                        <a href="contact.html">Контакты</a>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__col-title">Контакты</div>
+                        <a href="mailto:alexey@morozov.com">alex@pavlov.com</a>
+                        <a href="tel:+74951234567">+7 (495) 111-00-11</a>
+                        <a href="#">Москва, Россия</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                &copy; 2026 Александр Павлов. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
