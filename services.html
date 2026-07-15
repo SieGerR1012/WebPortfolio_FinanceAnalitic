@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/servicemodal.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>PortfolioFinAnalitic</title>
 
@@ -30,6 +32,77 @@
             </button>
         </div>
     </nav>
+
+    <!-- Services section desig -->
+     <section class="services">
+        <div class="container">
+            <h2 class="section-title reveal">Мои <span>Услуги</span></h2>
+            <p class="section-subtitle reveal">Комплексные аналитические решения для вашего бизнеса</p>
+
+            <div class="services__grid">
+                <div class="service-card reveal"
+                     data-title="Финансовое моделирование"
+                     data-desc="Разработка детальных финансовых моделей для прогнозирования доходов, расходов и денежных потоков. Строю трёхэтапные модели (3-statement), DCF-модели, а также модели для оценки сценариев и стресс-тестирования."
+                     data-features="Создание 3-statement моделей,DCF-оценка и WACC расчёт,Сценарный и чувствительный анализ,Автоматизация через VBA и Python,Интеграция с Power BI">
+                    <div class="service-card__icon"><i class='bx bx-line-chart'></i></div>
+                    <h3 class="service-card__title">Финансовое моделирование</h3>
+                    <p class="service-card__desc">Детальные прогнозы доходов, расходов и денежных потоков для принятия стратегических решений.</p>
+                    <span class="service-card__link">Подробнее</span>
+                </div>
+
+                <div class="service-card reveal"
+                     data-title="Анализ рисков"
+                     data-desc="Комплексная оценка финансовых рисков предприятия с разработкой стратегий хеджирования и минимизации потенциальных убытков. Применяю количественные и качественные методы анализа."
+                     data-features="VaR и Expected Shortfall расчёт,Монтекарло-симуляция,Стресс-тестирование портфелей,Анализ кредитных и рыночных рисков,Разработка риск-матриц">
+                    <div class="service-card__icon"><i class='bx bx-shield-alt-2'></i></div>
+                    <h3 class="service-card__title">Анализ рисков</h3>
+                    <p class="service-card__desc">Оценка финансовых рисков и разработка стратегий их минимизации для стабильного роста.</p>
+                    <span class="service-card__link">Подробнее</span>
+                </div>
+
+                <div class="service-card reveal"
+                     data-title="Инвестиционный анализ"
+                     data-desc="Глубокий анализ инвестиционных возможностей: от оценки отдельных активов до формирования оптимального портфеля. Проводю Due Diligence и оценку справедливой стоимости."
+                     data-features="Оценка стоимости компаний (DCF, comps),Due Diligence инвестиционных проектов,Оптимизация портфеля (MPT),Анализ ROI и IRR,Мультипликаторный анализ">
+                    <div class="service-card__icon"><i class='bx bx-dollar-circle'></i></div>
+                    <h3 class="service-card__title">Инвестиционный анализ</h3>
+                    <p class="service-card__desc">Оценка инвестиционных возможностей и формирование оптимального портфеля активов.</p>
+                    <span class="service-card__link">Подробнее</span>
+                </div>
+
+                <div class="service-card reveal"
+                     data-title="Финансовая отчётность"
+                     data-desc="Подготовка и анализ финансовой отчётности в соответствии с МСФО (IFRS) и РСБУ. Автоматизация отчётных процессов и создание наглядных дашбордов для руководства."
+                     data-features="Составление отчётов по IFRS и РСБУ,Создание финансовых дашбордов,Анализ коэффициентов (ликвидность, рентабельность),Подготовка отчётности для инвесторов,Автоматизация отчётных процессов">
+                    <div class="service-card__icon"><i class='bx bx-file-blank'></i></div>
+                    <h3 class="service-card__title">Финансовая отчётность</h3>
+                    <p class="service-card__desc">Подготовка и анализ отчётности по МСФО и РСБУ с автоматизацией процессов.</p>
+                    <span class="service-card__link">Подробнее</span>
+                </div>
+
+                <div class="service-card reveal"
+                     data-title="Бюджетирование и планирование"
+                     data-desc="Разработка систем бюджетирования и стратегического финансового планирования. Внедрение процессов планирования, контроля и анализа отклонений."
+                     data-features="Разработка бюджетов подразделений,Rolling Forecast методология,Контроль исполнения бюджетов,Анализ отклонений (variance analysis),Интеграция с ERP-системами">
+                    <div class="service-card__icon"><i class='bx bx-table'></i></div>
+                    <h3 class="service-card__title">Бюджетирование</h3>
+                    <p class="service-card__desc">Внедрение систем бюджетирования и стратегического финансового планирования.</p>
+                    <span class="service-card__link">Подробнее</span>
+                </div>
+
+                <div class="service-card reveal"
+                     data-title="Консалтинг по 데이터"
+                     data-desc="Консультации по оптимизации работы с финансовыми данными: от выбора инструментов до построения аналитической инфраструктуры и обучения команды."
+                     data-features="Выбор и внедрение BI-систем,Проектирование хранилищ данных,Обучение сотрудников,Оптимизация SQL-запросов,Настройка ETL-процессов">
+                    <div class="service-card__icon"><i class='bx bx-cog'></i></div>
+                    <h3 class="service-card__title">Консалтинг по данным</h3>
+                    <p class="service-card__desc">Оптимизация работы с финансовыми данными и построение аналитической инфраструктуры.</p>
+                    <span class="service-card__link">Подробнее</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- Footer section desig -->
@@ -63,5 +136,17 @@
         </div>
     </footer>
 
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal__close" id="modalClose"><i class='bx bx-x'></i></button>
+            <div class="modal__icon" id="modalIcon"></div>
+            <h3 class="modal__title" id="modalTitle"></h3>
+            <p class="modal__text" id="modalDesc"></p>
+            <ul class="modal__features" id="modalFeatures"></ul>
+            <a href="contact.html" class="modal__cta">Обсудить проект <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
